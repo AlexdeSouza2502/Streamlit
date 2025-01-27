@@ -1,12 +1,10 @@
 import streamlit as st
 
-st.header("Calculadora", delimiter="gray")
+st.header("Calculadora", divider="gray")
 
-
-st.write("Expressão")
-expression = st.text_input("Entre com os valores")
+expression = st.text_input("Entre com a expressão")
 
 if (expression):
-  result=eval(expression)
+  result = eval(expression)
 
-  st.write("Resultado:", result)
+  st.write("Resultado: ", result)
